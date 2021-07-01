@@ -4,11 +4,11 @@
 #include <assert.h>
 #include <string.h>
 
-void swap_max(int arr[],int l,int x){
- int max=arr[x];
- int index=x;
+void swap_max(int arr[],int l,int n){
+ int max=arr[n];
+ int index=n;
  int i;
- for(i=x;i<l;i++)
+ for(i=n;i<l;i++)
  {
   if(arr[i]>max)
    {
@@ -17,8 +17,8 @@ void swap_max(int arr[],int l,int x){
    }
  }
  int temp;
- temp=arr[x];
- arr[x]=max;
+ temp=arr[n];
+ arr[n]=max;
  arr[index]=temp;
 }
 
